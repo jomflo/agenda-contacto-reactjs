@@ -1,0 +1,56 @@
+.boton {
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid gray;
+    cursor: pointer;
+    padding: 5px;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+/*animar botones*/
+
+.boton.boton-eliminar::after,
+.boton.boton-editar::after,
+.boton.boton-cancelar::after,
+.boton.boton-regresar::after {
+    content: "";
+    width: 100%;
+    height: 200%;
+    border-radius: 0 0 50% 50%;
+    top: -200%;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    transition: 0.5s ease-in-out all;
+}
+
+.boton.boton-eliminar::after {
+    background-color: rgb(170, 19, 19);
+}
+
+.boton.boton-editar::after {
+    background-color: green;
+}
+
+.boton.boton-cancelar::after {
+    background-color: rgb(126, 3, 126);
+    top: 100%;
+}
+
+.boton.boton-regresar::after {
+    background-color: rgb(22, 22, 189);
+    top: 100%;
+    left: 50%;
+}
+
+.boton.boton-eliminar:hover::after,
+.boton.boton-editar:hover::after,
+.boton.boton-cancelar:hover::after,
+.boton.boton-regresar:hover::after {
+    top: 0;
+    left: 0;
+}

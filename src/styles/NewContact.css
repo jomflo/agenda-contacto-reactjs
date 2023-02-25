@@ -1,0 +1,111 @@
+.new-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(86, 86, 86, 0.8);
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.form-close {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.form-close-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #a5a5a5;
+    color: rgb(177, 6, 6);
+    cursor: pointer;
+}
+
+.form-close-icon:hover {
+    background-color: #747171;
+}
+
+.form-name,
+.form-number,
+.form-email,
+.form-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-button {
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+:is(.form-name, .form-number, .form-email) label {
+    height: 30px;
+    width: 25%;
+    text-align: justify;
+}
+
+.form-name .name,
+.form-number .number,
+.form-email .email {
+    height: 30px;
+    width: 75%;
+    background-color: transparent;
+    color: #eeeeee;
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+    outline: none;
+}
+
+:is(.form-button) .btn-cancel,
+.btn-save {
+    width: 140px;
+    height: 40px;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button .btn-cancel {
+    background-color: #c81e1e;
+}
+
+.form-button .btn-save {
+    background-color: rgb(52, 141, 17);
+}
+
+.form-button .btn-cancel:hover {
+    background-color: #ff0909;
+}
+
+.form-button .btn-save:hover {
+    background-color: rgb(78, 206, 28);
+}

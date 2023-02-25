@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 740px;
+    height: 40px;
+}
+
+.search {
+    width: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    color: #dddddd;
+    border: none;
+    height: 30px;
+}
+
+.search:focus {
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.navbar .icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.navbar .icon.icon-close-search {
+    width: 40px;
+    height: 40px;
+    color: red;
+}
+
+.navbar .icon.icon-close-search:hover {
+    background-color: rgb(145, 145, 145);
+    border-radius: 50%;
+}
+
+.navbar .icon-menu:hover {
+    color: rgb(0, 47, 255);
+}
+
+.navbar .icon.icon-add-contact {
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar .icon.icon-add-contact:hover {
+    top: 0;
+    background-color: green;
+}
