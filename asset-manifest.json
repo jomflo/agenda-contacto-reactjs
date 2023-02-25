@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/agenda-contacto-reactjs/static/css/main.19595adb.css",
+    "main.js": "/agenda-contacto-reactjs/static/js/main.6c6edaa2.js",
+    "static/js/787.dbe656e8.chunk.js": "/agenda-contacto-reactjs/static/js/787.dbe656e8.chunk.js",
+    "index.html": "/agenda-contacto-reactjs/index.html",
+    "main.19595adb.css.map": "/agenda-contacto-reactjs/static/css/main.19595adb.css.map",
+    "main.6c6edaa2.js.map": "/agenda-contacto-reactjs/static/js/main.6c6edaa2.js.map",
+    "787.dbe656e8.chunk.js.map": "/agenda-contacto-reactjs/static/js/787.dbe656e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19595adb.css",
+    "static/js/main.6c6edaa2.js"
+  ]
+}
