@@ -75,12 +75,12 @@ export function NewContact() {
           <VscClose className="form-close-icon" onClick={handleClose} />
         </div>
         <div className="form-name">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Nombre:</label>
           <input
             className="name"
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Nombre Completo"
             value={name}
             minLength={3}
             maxLength={30}
@@ -92,12 +92,12 @@ export function NewContact() {
         </div>
 
         <div className="form-number">
-          <label htmlFor="number">Number:</label>
+          <label htmlFor="number">Telefono:</label>
           <input
             className="number"
             type="tel"
             name="number"
-            placeholder="Numer Phone"
+            placeholder="Numero de Telefono"
             value={number}
             minLength={8}
             maxLength={20}
@@ -109,12 +109,12 @@ export function NewContact() {
         </div>
 
         <div className="form-email">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Correo:</label>
           <input
             className="email"
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Correo Electronico"
             value={email}
             maxLength={50}
             onChange={(e) => {
